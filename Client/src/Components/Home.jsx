@@ -14,7 +14,7 @@ const HomePage = () => {
   const fetchQuestions = async () => {
     try {
       setIsLoading(true);
-      const response = await axios.get('http://localhost:3000/api/questions', {
+      const response = await axios.get('req.hostname/api/questions', {
         params: {
           page: currentPage,
           type: filters.type,
